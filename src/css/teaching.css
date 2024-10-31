@@ -1,0 +1,52 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.teaching-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top:10vh;
+    width: 100%;
+}
+
+.teaching-card img{
+    height: 50vh;
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+.description-card{
+
+    width: 40vw;
+}
+
+@media(max-width:767px){
+    .main-heading{
+        font-size:5vh !important;
+    }
+    .teaching-card{
+        flex-wrap: wrap;
+    }
+    main p{
+        font-size:2vh;
+    }
+     .rev{
+    
+
+        flex-wrap: wrap-reverse;
+
+    }
+    .teaching-card img{
+        width: 95vw;
+        border-radius: 4vw;
+    }
+    .description-card{
+        width: auto;
+    }
+}

@@ -1,0 +1,38 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#313131;
+  
+}
+main h1{
+    font-size: 7vh !important;
+    font-weight: 400 !important;
+   
+
+}
+
+summary{
+    width: 80vw;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 5vh;
+    font-weight: bold;
+    cursor: pointer;
+}
+.summary span{
+    margin-left: 2vw;
+    margin-left: 2vw;
+    font-weight: bold;
+}
+.content{
+    width: 80vw;
+    padding:2vw;
+    
+}
+
+.cards{
+    margin-top: 10vh;
+}

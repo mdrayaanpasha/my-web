@@ -1,0 +1,60 @@
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:10vh;
+    flex-wrap: wrap;
+    width:100%;
+}
+.card-text{
+    max-width: 70vw;
+}
+
+.card h1,.card p{
+    margin: 0;
+   
+}
+.card p{
+    padding:0.2vw;
+    color:grey;
+    margin-bottom: 2vh;
+}
+
+.card button{
+    padding: 0.5vw 1vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    border-radius: 1.2vw;
+    border: 2px solid #333;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+@media (max-width:800px) {
+    main h1{
+        font-size:2vh;
+        text-align: center;
+    }
+    main p{
+        font-size:1.2vh;
+    }
+    .card{
+        display: block;
+    }
+    .card button{
+        width: 99vw;
+        height:5vh;
+        font-size:2.3vh;
+    }
+
+   
+    .card-text h1, .card-text p,  .card-text small{
+        width:99vw !important;
+        padding:1vw;
+    }
+   
+
+}

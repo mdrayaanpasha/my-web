@@ -1,0 +1,198 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+}
+.main-cover{
+    margin:0;
+    text-align: center;
+}
+main p{
+    color: grey;
+}
+.more-about-me {
+    align-self: flex-end;
+    justify-self: right;
+    color:grey;
+}
+
+.more-about-me a{
+    color:grey;
+    font-style: italic;
+}
+
+.craft-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:10vh;
+    flex-wrap: wrap;
+}
+.craft-card img{
+    height: 50vh;
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+.tags{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap !important;
+    gap:2vw;
+}
+.tags span{
+    background-color: #F5F6F7;
+    padding:0.5vw;
+    border-radius: 1.2vw;
+}
+i{
+
+    color: #373733;
+
+}
+
+i a{
+    color: #373733;
+}
+.craft-card button{
+    padding:1vw;
+    border:none;
+    background-color:black;
+    color:white;
+    font-weight: bold;
+    font-size: 2.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-top: 5vh;
+    border-radius: 1vw;
+}
+
+.craft{
+    gap:5vh;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #E0E0E0;
+    background-color: #F2F2F2;
+}
+
+.dialog-overlay{
+    height:100%;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    background: rgba(255, 255, 255, 0.2); /* Frosted glass overlay */
+    backdrop-filter: blur(10px);
+    
+}
+.dialog-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.dialog-content img{
+    height: 60vh;
+    border-radius: 1vw;
+}
+.dialog-content p{
+    max-width: 60vw;
+}
+
+.d-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2vw;
+    border-radius: 1vw;
+    z-index: 10;
+}
+#cancel:hover{
+    cursor:pointer;
+}
+.dialog-content button{
+    width: 100%;
+    height:6vh;
+    border:none;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    font-size:3vh;
+    border-radius: 1vw;
+    cursor:pointer;
+}
+button:hover{
+    cursor: pointer;
+}
+#view-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#view-more a{
+    display: flex !important;
+    align-items: center !important;
+    color:#808080;
+    text-decoration: none;
+}
+@media (max-width:800px) {
+    main h1{
+        font-size:2vh;
+        text-align: center;
+    }
+    main p{
+        font-size:1.2vh;
+    }
+    .main-cover{
+        font-size:6vh !important;
+        text-align: center;
+    }
+    .craft-card img{
+        width: 100%;
+        height:30vh;
+    }
+    #rev-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap:wrap-reverse !important;
+    }
+    .tags span{
+        padding:2vw;
+        border-radius: 2vw;
+    }
+    .craft-card button{
+        padding:5vw !important;
+        width: 100%;
+        border-radius: 2vw;
+    }
+    .craft-card h1{
+        font-size:3vh;
+    }
+    .connect h3{
+        font-size:2vh;
+    }
+    .dialog-overlay{
+        height: 100%;
+        width: 100%;
+    }
+    .dialog-content img{
+        height: 30vh;
+        border-radius: 4vw;
+        width: 90vw;
+        object-fit: cover;
+    }
+    .dialog-content p{
+        max-width: 90vw;
+    }
+    .d-nav h2{
+        font-size:2.5vh !important;
+    }
+    #cancel{
+        margin-right: 2vw;
+    }
+}
