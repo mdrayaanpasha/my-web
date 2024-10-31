@@ -93,7 +93,7 @@ nav h1{
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: space-evenly;
     }
     .mobile-nav li{
         list-style: none;
@@ -101,12 +101,24 @@ nav h1{
     .mobile-nav a{
         display: flex;
         align-items: center;
-        justify-content:center;
+        justify-content:space-evenly;
         flex-direction: column;
         text-decoration: none;
         font-size:3vh;
         color:black;
-        text-align: center;
+
+    }
+    .mob-nav-header{
+        display: flex;
         align-items: center;
+        justify-content: space-between;
+        gap:20vw;
+        position: fixed;
+        top:0;
+    }
+    .mob-nav-header button{
+        background: transparent;
+        border:none;
+        font-size: 10vh;
     }
 }
