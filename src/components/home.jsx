@@ -130,15 +130,18 @@ export default function Home() {
                         {openDialog === project.id && (
                             <div className="dialog-overlay">
                                 <div className="d-nav">
-                                <h2>{project.title}</h2>
-                                <h2 id="cancel" onClick={handleCloseDialog}>❌</h2>
+                                <h2 ></h2>
+                                <h2 id="cancel" onClick={handleCloseDialog}><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#3C3C3C"><path d="M480-438 270-228q-9 9-21 9t-21-9q-9-9-9-21t9-21l210-210-210-210q-9-9-9-21t9-21q9-9 21-9t21 9l210 210 210-210q9-9 21-9t21 9q9 9 9 21t-9 21L522-480l210 210q9 9 9 21t-9 21q-9 9-21 9t-21-9L480-438Z"/></svg></h2>
                                 </div>
                                 <div className="dialog-content">
                                     
                                     <img src={project.imgSrc} alt="" />
                                     <div className="di">
+                                        <h2>{project.title}</h2>
                                     <p dangerouslySetInnerHTML={{ __html: project.description }} />
-                                    <button onClick={e=>window.open(project.link)}>Check out!</button>
+                                    <center>
+                                    <button onClick={e=>window.open(project.link)}> <span>VISIT NOW </span> <svg xmlns="http://www.w3.org/2000/svg" height="4vh" viewBox="0 -960 960 960" width="4vw" fill="#e8eaed"><path d="M654-658 263-267q-9 9-21 9t-21-9q-9-9-9-21t9-21l391-391H264q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h420q12.75 0 21.38 8.62Q714-742.75 714-730v420q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-348Z"/></svg></button>
+                                    </center>
                                     </div>
                                     
                                 </div>

@@ -164,7 +164,7 @@ hr{
     top:0;
     background: rgba(255, 255, 255, 0.2); /* Frosted glass overlay */
     backdrop-filter: blur(10px);
-    
+    gap:5vw;
 }
 .dialog-content {
     display: flex;
@@ -173,11 +173,14 @@ hr{
     flex-wrap: wrap;
 }
 .dialog-content img{
-    height: 60vh;
+    height: 50vh;
     border-radius: 1vw;
+    max-width:38vw;
+    object-fit: cover;
 }
 .dialog-content p{
-    max-width: 60vw;
+    max-width: 50vw;
+    padding:2vw;
 }
 
 .d-nav{
@@ -192,13 +195,32 @@ hr{
     cursor:pointer;
 }
 .dialog-content button{
-    width: 100%;
-    height:6vh;
-    border:none;
-    background-color: black;
-    color:white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0vw;
     font-weight: bold;
-    font-size:3vh;
+    padding:1vw;
+    padding-left: 2vw ;
+    text-align: center; 
+    padding-right: 2vw ; 
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15), /* Increased blur for a deeper shadow */
+                -5px -5px 15px rgba(255, 255, 255, 0.2), /* Softer inner highlight */
+                inset 2px 2px 5px rgba(0, 0, 0, 0.1), /* Inner shadow */
+                inset -2px -2px 5px rgba(255, 255, 255, 0.1); /* Outer highlight */
+   
+    background-color: #3c3c3c; /* Lighter on hover */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2), /* Slightly lighter shadow on hover */
+                -4px -4px 10px rgba(255, 255, 255, 0.3), /* Brighter highlight on hover */
+                inset 1px 1px 3px rgba(255, 255, 255, 0.4), /* Slightly more pronounced inner shadow */
+                inset -1px -1px 3px rgba(0, 0, 0, 0.05); /* Subtle outer highlight on hover */
+            
+    color:#e8eaed;
+    border:none;
+    
+    font-weight: bold;
+    font-size:2.5vh;
     border-radius: 1vw;
     cursor:pointer;
 }
