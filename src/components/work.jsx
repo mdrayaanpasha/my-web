@@ -81,7 +81,11 @@ export default function Work() {
                 {projects.map((project) => (
                     <React.Fragment key={project.id}>
                         <div className="craft-card" id={project.id % 2 !== 0 ? "rev-wrap" : ""}>
-                            {project.id % 2 === 0 ? <img src={project.imgSrc} alt={project.title} /> : null}
+                            {project.id % 2 === 0 ? 
+                            <div className="neumorphic-container">
+                            <img src={project.imgSrc} alt={project.title} />
+                            </div>
+                            : null}
                             <div className="card-des">
                                 <h1>{project.title}</h1>
                                 <div className="tags">
@@ -95,7 +99,10 @@ export default function Work() {
                                     </button>
                                 </center>
                             </div>
-                            {project.id % 2 !== 0 ? <img src={project.imgSrc} alt={project.title} /> : null}
+                            {project.id % 2 !== 0 ?
+                            <div className="neumorphic-container">
+                             <img src={project.imgSrc} alt={project.title} />
+                             </div> : null}
                         </div>
 
                         {openDialog === project.id && (
