@@ -73,8 +73,8 @@ export default function Work() {
         <>
             <Nav></Nav>
             <main>
-                <p>Insights & Findings.</p>
-                <h1 className="main-heading" style={{ marginTop: "0" }}>RE-IMAGINING DATA STRUCTURES.</h1>
+                <p>Crafted Innovations.</p>
+                <h1 className="main-heading" style={{ marginTop: "0" }}>MERGING LOGIC & CREATIVITY.</h1>
             </main>
             
             <section className="craft">
