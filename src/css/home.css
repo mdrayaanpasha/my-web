@@ -49,6 +49,44 @@ main p{
     border-radius: 2vw; /* Match the border radius of the container */
     display: block; /* Remove bottom space for images */
 }
+.icon-circle {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2); /* Base color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; /* Space between icons */
+    box-shadow: 
+        6px 6px 10px rgba(0, 0, 0, 0.2), /* Shadow to the right and down */
+        -6px -6px 10px rgba(255, 255, 255, 0.8); /* Highlight to the left and up */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Animation on hover */
+}
+
+.connect {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon-circle a {
+    color: #2e2e2e; /* Change this to your desired color */
+    text-decoration: none; /* Removes underline from the link */
+}
+
+.icon-circle a:hover {
+    color: #2980b9; /* Change color on hover if desired */
+}
+
+.icon-circle:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Softer hover color */
+    transform: scale(1.1); /* Slightly grow on hover */
+    box-shadow: 
+        4px 4px 12px rgba(0, 0, 0, 0.3), /* Stronger shadow on hover */
+        -4px -4px 12px rgba(255, 255, 255, 0.9); /* Stronger highlight on hover */
+}
+
 
 .tags{
     display: flex;

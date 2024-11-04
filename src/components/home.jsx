@@ -4,6 +4,15 @@ import Nav from "./nav";
 import grdImg from "../imgs/grd-des.png";
 import christ from "../imgs/christ.jpg";
 import nh from "../imgs/new-horizon.jpg";
+import { faCode } from '@fortawesome/free-solid-svg-icons'; // For coding icon
+
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; // For the email icon
+import { faGithub } from '@fortawesome/free-brands-svg-icons'; // For the GitHub icon
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'; // For the LinkedIn icon
+import { faMedium } from '@fortawesome/free-brands-svg-icons'; // For the Medium icon
+
 
 export default function Home() {
     // State hooks for each dialog
@@ -288,13 +297,36 @@ export default function Home() {
                     Connect
                 </h2>
                 <div className="connect">
-                    <h3 style={{ fontWeight: "normal", color: "grey" }}>
-                        You can email me: <i>mohdrayaanpasha@gmail.com</i> or DM me on{" "}
-                        <i>
-                            <a href="https://linkedin.com/in/mdrayaanpasha">LinkedIn</a>
-                        </i>
-                    </h3>
-                </div>
+    
+    
+        <div className="icon-circle">
+            <a href="https://leetcode.com/u/mdrayaanpasha" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faCode} />
+            </a>
+        </div>
+        <div className="icon-circle">
+            <a href="https://medium.com/@mdrayaanpasha" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faMedium} />
+            </a>
+        </div>
+        <div className="icon-circle">
+            <a href="https://github.com/mdrayaanpasha" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} />
+            </a>
+        </div>
+        <div className="icon-circle">
+            <a href="https://linkedin.com/in/mdrayaanpasha" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+        </div>
+        <div className="icon-circle">
+            <a href="mailto:mohdrayaanpasha@gmail.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faEnvelope} />
+            </a>
+        </div>
+    
+</div>
+
             </center>
         </>
     );
