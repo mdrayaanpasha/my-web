@@ -30,12 +30,26 @@ main p{
     margin-top:10vh;
     flex-wrap: wrap;
 }
-.craft-card img{
-    height: 50vh;
-    width: 40vw;
-    object-fit: cover;
-    border-radius: 1vw;
+.neumorphic-container {
+    height: 50vh; /* Set dynamic height */
+    width: 40vw;  /* Set dynamic width */
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 2vw; /* Match the border radius of the image */
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.25), 
+                -5px -5px 20px rgba(255, 255, 255, 0.9),
+                inset 2px 2px 5px rgba(255, 255, 255, 0.5), 
+                inset -2px -2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Crop any overflow */
 }
+
+.craft-card img {
+    height: 100%; /* Fill the container height */
+    width: 100%; /* Fill the container width */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    border-radius: 2vw; /* Match the border radius of the container */
+    display: block; /* Remove bottom space for images */
+}
+
 .tags{
     display: flex;
     align-items: center;
@@ -43,11 +57,25 @@ main p{
     flex-wrap: wrap !important;
     gap:2vw;
 }
-.tags span{
-    background-color: #F5F6F7;
-    padding:0.5vw;
+.tags span {
+    background-color: #F5F6F7; /* Light background for the tag */
+    padding: 0.5vw;
     border-radius: 1.2vw;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15), /* Increased blur and offset for outer shadow */
+                -8px -8px 20px rgba(255, 255, 255, 0.9), /* Increased blur and offset for inner highlight */
+                inset 4px 4px 10px rgba(255, 255, 255, 0.5), /* Increased blur for inner shadow */
+                inset -4px -4px 10px rgba(0, 0, 0, 0.1); /* Increased blur for outer highlight */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
+
+.tags span:hover {
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2), /* Darker shadow on hover with increased blur */
+                -6px -6px 15px rgba(255, 255, 255, 1), /* Highlight on hover with increased blur */
+                inset 2px 2px 6px rgba(255, 255, 255, 0.4), /* Inner shadow on hover with increased blur */
+                inset -2px -2px 6px rgba(0, 0, 0, 0.05); /* Subtle outer highlight on hover */
+}
+
+
 i{
 
     color: #373733;
@@ -57,18 +85,29 @@ i{
 i a{
     color: #373733;
 }
-.craft-card button{
-    padding:1vw;
-    border:none;
-    background-color:black;
-    color:white;
-    font-weight: bold;
-    font-size: 2.5vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    margin-top: 5vh;
+.craft-card button {
+    background-color: #2e2e2e; /* Base color */
+    color: #fff;
+    border: none;
     border-radius: 1vw;
+    padding: 2vh 2vw; /* Combined padding */
+    margin-top: 5vh;
+    text-decoration: none;
+    font-weight: bold;
+    border:none;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15), /* Increased blur for a deeper shadow */
+                -5px -5px 15px rgba(255, 255, 255, 0.2), /* Softer inner highlight */
+                inset 2px 2px 5px rgba(0, 0, 0, 0.1), /* Inner shadow */
+                inset -2px -2px 5px rgba(255, 255, 255, 0.1); /* Outer highlight */
+   
+    background-color: #3c3c3c; /* Lighter on hover */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2), /* Slightly lighter shadow on hover */
+                -4px -4px 10px rgba(255, 255, 255, 0.3), /* Brighter highlight on hover */
+                inset 1px 1px 3px rgba(255, 255, 255, 0.4), /* Slightly more pronounced inner shadow */
+                inset -1px -1px 3px rgba(0, 0, 0, 0.05); /* Subtle outer highlight on hover */
 }
+
+
 
 .craft{
     gap:5vh;

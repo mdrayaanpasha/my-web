@@ -20,18 +20,30 @@
     margin-bottom: 2vh;
 }
 
-.card button{
+.card button {
     padding: 0.5vw 1vw;
     font-size: 1.2vw;
     font-weight: bold;
-    border: none;
-    background-color: transparent;
+    border: 2px solid #2e2e2e; /* Border color set to #2e2e2e */
+    background-color: transparent; /* Keep the background transparent */
     border-radius: 1.2vw;
-    border: 2px solid #333;
-    color: #333;
+    color: #2e2e2e; /* Text color set to #2e2e2e */
     cursor: pointer;
-    transition: background-color 0.2s;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2), /* Soft outer shadow */
+                -3px -3px 6px rgba(255, 255, 255, 0.1), /* Soft inner highlight */
+                inset 1px 1px 3px rgba(255, 255, 255, 0.2), /* Inner shadow */
+                inset -1px -1px 3px rgba(0, 0, 0, 0.1); /* Subtle outer highlight */
+    transition: background-color 0.2s, box-shadow 0.2s, color 0.2s; /* Smooth transitions for hover effects */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25), /* Slightly darker shadow on hover */
+    -2px -2px 5px rgba(255, 255, 255, 0.3), /* Brighter highlight on hover */
+    inset 1px 1px 2px rgba(255, 255, 255, 0.4), /* More pronounced inner shadow */
+    inset -1px -1px 2px rgba(0, 0, 0, 0.05); /* Subtle outer highlight on hover */
 }
+
+
+   
+    
+
 
 @media (max-width:800px) {
     main h1{

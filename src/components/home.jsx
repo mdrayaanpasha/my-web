@@ -18,6 +18,7 @@ export default function Home() {
             tags: ["ML", "Algorithms", "Data Structures"],
             description: "A custom combinatorial gradient descent algorithm used to predict exoplanet habitability factors, coded from scratch with no dependencies.",
             link: "https://colab.research.google.com/drive/1M6tcF73M5aKoRtrVqyYwJf8dIZhTxCj4?usp=sharing",
+            
         },
         {
             id: 2,
@@ -25,15 +26,17 @@ export default function Home() {
             imgSrc: "https://mdrayaanpasha.github.io/projects/imgs/ship-algo.jpg",
             tags: ["Python", "Algorithms", "Data Structures"],
             description: "Enhanced Dijkstra's algorithm, factoring both risk and distance to optimize routes for major Indian ports.",
-            link: "https://github.com/mdrayaanpasha/MIT-DAA/blob/main/route.py"
+            link: "https://github.com/mdrayaanpasha/MIT-DAA/blob/main/route.py",
+          
         },
         {
             id: 3,
-            title: "ORGANIZING COLLEGE BUNKS",
+            title: "Organizing College Bunks",
             imgSrc: "https://trackatt.vercel.app/assets/cover-home-D_iAjG5N.jpeg",
             tags: ["ReactJs", "Algorithms"],
             description: "Developed a tool for students to achieve optimal attendance by selecting classes strategically.",
-            link: "https://trackatt.vercel.app/"
+            link: "https://trackatt.vercel.app/",
+           
         },
         {
             id: 4,
@@ -41,7 +44,8 @@ export default function Home() {
             imgSrc: "https://solacecraft.co.in/assets/1-DCKddiiN.png",
             tags: ["MongoDB", "ExpressJs", "ReactJs", "NodeJs"],
             description: "Full-stack MERN e-commerce website for Solace Craft, featuring authentication, ordering, and payment functionalities.",
-            link: "https://solacecraft.co.in"
+            link: "https://solacecraft.co.in",
+          
         }
        
     ];
@@ -85,8 +89,9 @@ export default function Home() {
                         
                         <div className="craft-card" id={project.id % 2 !== 0 ? "rev-wrap" : ""} >
                         {project.id % 2 === 0 ? <>
-                            <img src={project.imgSrc} alt={project.title} />
-
+                            <div className="neumorphic-container">
+                                <img src={project.imgSrc} alt={project.title} style={project.css ? project.css : null}/>
+                            </div>
                         </>: 
                         null
                         }
@@ -104,8 +109,9 @@ export default function Home() {
                                 </center>
                             </div>
                             {project.id % 2 !== 0 ? <>
-                            <img src={project.imgSrc} alt={project.title} />
-
+                            <div className="neumorphic-container">
+                            <img src={project.imgSrc} alt={project.title} style={project.css ? project.css : null}/>
+                            </div>
                         </>: 
                         null
                         }
