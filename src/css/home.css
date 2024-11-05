@@ -175,7 +175,7 @@ hr{
 .dialog-content img{
     height: 50vh;
     border-radius: 1vw;
-    max-width:38vw;
+    width:38vw;
     object-fit: cover;
 }
 .dialog-content p{
@@ -290,7 +290,11 @@ button:hover{
         object-fit: cover;
     }
     .dialog-content p{
-        max-width: 90vw;
+        max-width: 80vw;
+    }
+    .dialog-content button{
+        padding:2vw;
+        padding-right: 2vw;
     }
     .d-nav h2{
         font-size:2.5vh !important;
