@@ -4,10 +4,11 @@
     justify-content: space-evenly;
     margin-top:10vh;
     flex-wrap: wrap;
-    width:100%;
+    width:97vw;
 }
+
 .card-text{
-    max-width: 70vw;
+    max-width: 80vw;
 }
 
 .card h1,.card p{
@@ -56,8 +57,11 @@
     .card{
         display: block;
     }
+    .card-text{
+        max-width: 90vw !important;
+    }
     .card button{
-        width: 99vw;
+        width: 90vw;
         height:5vh;
         font-size:2.3vh;
     }

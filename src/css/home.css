@@ -243,6 +243,10 @@ button:hover{
         font-size:2vh;
         text-align: center;
     }
+    .neumorphic-container {
+        width: 98vw;
+        height:30vh;
+    }
     main p{
         font-size:1.2vh;
     }

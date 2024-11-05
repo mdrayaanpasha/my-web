@@ -27,6 +27,9 @@ export default function Nav({ page }) {
                     <li id={page === "blogs" ? "nav-page-a" : null}>
                         <a href="./blogs">Blogs</a>
                     </li>
+                    <li id={page === "blogs" ? "nav-page-a" : null}>
+                        <a href="https://rayaan-leetcode.vercel.app/">LeetCode</a>
+                    </li>
                 </ul>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -61,7 +64,9 @@ export default function Nav({ page }) {
 
                             <li><a href="./blogs">Blogs</a></li>
                             <hr style={{ width: "99vw", color: "grey" }} />
-
+                            <li id={page === "blogs" ? "nav-page-a" : null}>
+                                <a href="https://rayaan-leetcode.vercel.app/">LeetCode</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
