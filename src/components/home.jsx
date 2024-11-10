@@ -277,6 +277,17 @@ export default function Home() {
                         </div>
                         <button onClick={e=>window.open("https://zenodo.org/records/13899127")}>Read Paper</button>
                     </div>
+                    <hr />
+                    <div className="card">
+                        <div className="card-text">
+                        <small style={{display:"flex",alignItems:"center"}}>
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="24px" fill="#808080"><path d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg> */}
+                            <b>Paper</b> | Machine Learning, Exo-Planets | 2024</small>
+                        <h1>Combinatorial Gradient Descent Algorithm for Exo-Planet Habitability Prediction.</h1>
+                        <p>This papers provides blend of gradient descent algoritm with combinatorics to acheive traits that make exo planets habitable.</p>
+                        </div>
+                        <button onClick={e=>window.open("https://zenodo.org/records/14063142")}>Read Paper</button>
+                    </div>
                 </section>
 
 
